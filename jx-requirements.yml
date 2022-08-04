@@ -6,8 +6,8 @@ spec:
     schedule: ""
   cluster:
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - lodotek
+    environmentGitOwner: lodotek
     gitKind: github
     gitName: github
     gitServer: https://github.com
