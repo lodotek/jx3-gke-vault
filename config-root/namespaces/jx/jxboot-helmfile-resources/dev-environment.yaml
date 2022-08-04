@@ -30,7 +30,7 @@ spec:
     gitServer: https://github.com
     kubeProvider: "gke"
     pipelineUsername: "jx-bot"
-    pipelineUserEmail: "jenkins-x@googlegroups.com"
+    pipelineUserEmail: "2421856+lodotek@users.noreply.github.com"
     prowConfig: Scheduler
     storageLocations:
       - bucketUrl: "gs://logs-tf-jx-enabled-aardvark-6e91e88a10c6"

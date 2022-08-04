@@ -28,6 +28,8 @@ jxRequirements:
     gitKind: github
     gitName: github
     gitServer: https://github.com
+    gke:
+      projectNumber: "804354894486"
     project: argocd-poc-356920
     provider: gke
     registry: gcr.io
@@ -48,6 +50,7 @@ jxRequirements:
       production: true
   kuberhealthy: true
   pipelineUser:
+    email: 2421856+lodotek@users.noreply.github.com
     username: jx-bot
   repository: nexus
   secretStorage: vault
@@ -58,7 +61,13 @@ jxRequirements:
     url: gs://reports-tf-jx-enabled-aardvark-6e91e88a10c6
   - name: repository
     url: gs://repository-tf-jx-enabled-aardvark-6e91e88a10c6
-  vault: {}
+  terraformVault: true
+  vault:
+    bucket: vault-tf-jx-enabled-aardvark-6e91e88a10c6
+    key: crypto-key-tf-jx-enabled-aardvark-6e91e88a10c6
+    keyring: keyring-tf-jx-enabled-aardvark-6e91e88a10c6
+    name: tf-jx-enabled-aardvark
+    serviceAccount: tf-jx-enabled-aardvark-vt
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
   enabled: false
