@@ -5,21 +5,25 @@ spec:
     enabled: false
     schedule: ""
   cluster:
+    clusterName: tf-jx-enabled-aardvark
     devEnvApprovers:
     - lodotek
     environmentGitOwner: lodotek
     gitKind: github
     gitName: github
     gitServer: https://github.com/lodotek/jx3-gke-vault.git
+    project: argocd-poc-356920
     provider: gke
     registry: gcr.io
   environments:
   - key: dev
+    owner: lodotek
+    repository: jx3-gke-vault
   - key: staging
   - key: production
   ingress:
     domain: ""
-    externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""

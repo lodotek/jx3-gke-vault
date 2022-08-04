@@ -1,0 +1,23 @@
+# Source: jxboot-helmfile-resources/templates/repositories.yaml
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  name: "dev"
+  labels:
+    jenkins.io/gitSync: "false"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
+  namespace: jx
+spec:
+  description: "the git repository for the Dev environment"
+  provider: "https://github.com/lodotek/jx3-gke-vault.git"
+  providerKind: 'github'
+  providerName: 'github'
+  org: "lodotek"
+  repo: "jx3-gke-vault"
+  httpCloneURL: "https://github.com/lodotek/jx3-gke-vault.git/lodotek/jx3-gke-vault.git"
+  url: "https://github.com/lodotek/jx3-gke-vault.git/lodotek/jx3-gke-vault.git"
+  scheduler:
+    kind: Scheduler
+    name: "in-repo"
