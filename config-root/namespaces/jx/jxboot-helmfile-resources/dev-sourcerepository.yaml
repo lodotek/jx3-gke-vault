@@ -11,13 +11,13 @@ metadata:
   namespace: jx
 spec:
   description: "the git repository for the Dev environment"
-  provider: "https://github.com/lodotek/jx3-gke-vault.git"
+  provider: "https://github.com"
   providerKind: 'github'
   providerName: 'github'
   org: "lodotek"
   repo: "jx3-gke-vault"
-  httpCloneURL: "https://github.com/lodotek/jx3-gke-vault.git/lodotek/jx3-gke-vault.git"
-  url: "https://github.com/lodotek/jx3-gke-vault.git/lodotek/jx3-gke-vault.git"
+  httpCloneURL: "https://github.com/lodotek/jx3-gke-vault.git"
+  url: "https://github.com/lodotek/jx3-gke-vault.git"
   scheduler:
     kind: Scheduler
     name: "in-repo"

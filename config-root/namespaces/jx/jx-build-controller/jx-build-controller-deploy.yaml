@@ -61,7 +61,7 @@ spec:
             - name: GIT_AUTHOR_NAME
               value: jenkins-x-bot
             - name: GIT_SECRET_SERVER
-              value: https://github.com/lodotek/jx3-gke-vault.git
+              value: https://github.com
             - name: TRACES_EXPORTER_ENDPOINT
               value: tempo.jx-observability:14268
             - name: TRACES_EXPORTER_TYPE

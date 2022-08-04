@@ -13,7 +13,7 @@ metadata:
 spec:
   source:
     ref: "master"
-    url: https://github.com/lodotek/jx3-gke-vault.git/lodotek/jx3-gke-vault.git
+    url: https://github.com/lodotek/jx3-gke-vault.git
   kind: Development
   label: Development
   namespace: jx
@@ -29,6 +29,13 @@ spec:
     envOrganisation: lodotek
     gitServer: https://github.com
     kubeProvider: "gke"
-    pipelineUsername: "jenkins-x-labs-bot"
+    pipelineUsername: "jx-bot"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
+    storageLocations:
+      - bucketUrl: "gs://logs-tf-jx-enabled-aardvark-6e91e88a10c6"
+        classifier: "logs"
+      - bucketUrl: "gs://reports-tf-jx-enabled-aardvark-6e91e88a10c6"
+        classifier: "reports"
+      - bucketUrl: "gs://repository-tf-jx-enabled-aardvark-6e91e88a10c6"
+        classifier: "repository"
