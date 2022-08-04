@@ -10,7 +10,7 @@ spec:
     environmentGitOwner: lodotek
     gitKind: github
     gitName: github
-    gitServer: https://github.com
+    gitServer: https://github.com/lodotek/jx3-gke-vault.git
     provider: gke
     registry: gcr.io
   environments:
