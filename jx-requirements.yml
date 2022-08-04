@@ -33,6 +33,7 @@ spec:
       production: true
   kuberhealthy: true
   pipelineUser:
+    email: 2421856+lodotek@users.noreply.github.com
     username: jx-bot
   repository: nexus
   secretStorage: vault
